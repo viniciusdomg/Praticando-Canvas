@@ -5,7 +5,7 @@ let imagem = new Image();
 imagem.src = 'idle_right.png';
 let i=0;
 let interval = 200; 
-let xx = 100, xy = 100;
+let xx = 300, xy = 300;
 
 // link para spritesheet de pokemon
 //https://stackoverflow.com/questions/45555491/unable-to-animate-sprite-in-phaser-js
@@ -19,7 +19,7 @@ function perderCabeca(){
             i=0;
         }
         if(i===0){
-            context.drawImage(imagem, 0,0,49,52, xx,xy, 100,100);
+            context.drawImage(imagem, 0,0,49,50, xx,xy, 100,100);
         }else if(i===1){
             context.drawImage(imagem, 49,0, 49,50, xx,xy, 100,100);
         }else if(i===2){
@@ -35,11 +35,11 @@ function perderCabeca(){
         }else if(i===7){
             context.drawImage(imagem, 49*3,52, 49,50, xx,xy, 100,100);
         }else if(i===8){
-            context.drawImage(imagem, 0,52*2-1.5, 49,50, xx,xy, 100,100);
+            context.drawImage(imagem, 0,52*2-1, 49,50, xx,xy, 100,100);
         }else if(i===9){
-            context.drawImage(imagem, 49,52*2-1.5, 49,50, xx,xy, 100,100);
+            context.drawImage(imagem, 49,52*2-1, 49,50, xx,xy, 100,100);
         }else if(i===10){
-            context.drawImage(imagem, 49*2,52*2-1.5, 49,50, xx,xy, 100,100);
+            context.drawImage(imagem, 49*2,52*2-1, 49,50, xx,xy, 100,100);
         }
             i++;
     
